@@ -42,6 +42,8 @@ for guildidsss in guildsIds:
 		for username in ids:
 			try:
 				userid = members[username]['presence']['user']['id']
+				# remove the hashtags to also scrape pfps
+				#
 				# try:
 				# 	userprofile = requests.get(f"https://discord.com/api/v9/users/{userid}/profile", headers=getheaders(__token__)).json()
 				# 	r = requests.get(f"https://cdn.discordapp.com/avatars/{userid}/{userprofile['user']['avatar']}.png?size=2048")
